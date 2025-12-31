@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+  height: 100vh;
+}
+
+/* Screens */
+.screen {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen.active {
+  display: flex
+}
+
+/* Intro */
+#intro {
+  flex-direction: column;
+  cursor: pointer
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2563eb
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #6b7280
+}
+
+/* Form */
+.form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.form-group {
+  margin-bottom: 15px
+}
+
+label {
+  font-size: .9rem
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.start-btn {
+  background: #2563eb;
+  color: white
+}
+
+.start-btn:hover {
+  background: #1e40af
+}
+
+.error {
+  text-align: center;
+  margin-top: 10px;
+  color: #dc2626
+}
+
+/* Game */
+#game {
+  flex-direction: column;
+  padding: 20px
+}
+
+.top-bar {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.timer {
+  background: #2563eb;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.question {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+  margin-bottom: 20px;
+}
+
+.options {
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.option {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Score */
+.scorebox {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.restart {
+  margin-top: 20px;
+  background: #22c55e;
+  color: white;
+}
+
+.restart:hover {
+  background: #16a34a
+}
+
+
+
+/* dashboard ui */
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  position: fixed;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h4 {
+  font-weight: 700;
+}
+
+.sidebar a {
+  color: #555;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 25px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.topbar {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
